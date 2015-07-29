@@ -14,6 +14,10 @@
 		E4F14E121B68E7B400AFBC74 /* VEServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E101B68E7B400AFBC74 /* VEServiceCenter.m */; };
 		E4F14E151B68E7C300AFBC74 /* VEBaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14E131B68E7C300AFBC74 /* VEBaseService.h */; };
 		E4F14E161B68E7C300AFBC74 /* VEBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E141B68E7C300AFBC74 /* VEBaseService.m */; };
+		E4F14E1A1B68EAF300AFBC74 /* UIAlertView+Vein.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14E181B68EAF300AFBC74 /* UIAlertView+Vein.h */; };
+		E4F14E1B1B68EAF300AFBC74 /* UIAlertView+Vein.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E191B68EAF300AFBC74 /* UIAlertView+Vein.m */; };
+		E4F14E1F1B68F0F200AFBC74 /* NSTimer+Vein.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14E1D1B68F0F200AFBC74 /* NSTimer+Vein.h */; };
+		E4F14E201B68F0F200AFBC74 /* NSTimer+Vein.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E1E1B68F0F200AFBC74 /* NSTimer+Vein.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		E4F14E101B68E7B400AFBC74 /* VEServiceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEServiceCenter.m; sourceTree = "<group>"; };
 		E4F14E131B68E7C300AFBC74 /* VEBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBaseService.h; sourceTree = "<group>"; };
 		E4F14E141B68E7C300AFBC74 /* VEBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBaseService.m; sourceTree = "<group>"; };
+		E4F14E181B68EAF300AFBC74 /* UIAlertView+Vein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Vein.h"; sourceTree = "<group>"; };
+		E4F14E191B68EAF300AFBC74 /* UIAlertView+Vein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Vein.m"; sourceTree = "<group>"; };
+		E4F14E1D1B68F0F200AFBC74 /* NSTimer+Vein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Vein.h"; sourceTree = "<group>"; };
+		E4F14E1E1B68F0F200AFBC74 /* NSTimer+Vein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Vein.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		E4F14DE41B68D83500AFBC74 /* Vein */ = {
 			isa = PBXGroup;
 			children = (
+				E4F14E1C1B68F0D400AFBC74 /* Foundation */,
+				E4F14E171B68EA6300AFBC74 /* UIKit */,
 				E4F14E061B68E5E400AFBC74 /* Services */,
 				E4F14DE71B68D83500AFBC74 /* Vein.h */,
 				E4F14DE51B68D83500AFBC74 /* Supporting Files */,
@@ -122,6 +132,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		E4F14E171B68EA6300AFBC74 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E4F14E181B68EAF300AFBC74 /* UIAlertView+Vein.h */,
+				E4F14E191B68EAF300AFBC74 /* UIAlertView+Vein.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E4F14E1C1B68F0D400AFBC74 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				E4F14E1D1B68F0F200AFBC74 /* NSTimer+Vein.h */,
+				E4F14E1E1B68F0F200AFBC74 /* NSTimer+Vein.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -131,6 +159,8 @@
 			files = (
 				E4F14E111B68E7B400AFBC74 /* VEServiceCenter.h in Headers */,
 				E4F14DE81B68D83500AFBC74 /* Vein.h in Headers */,
+				E4F14E1A1B68EAF300AFBC74 /* UIAlertView+Vein.h in Headers */,
+				E4F14E1F1B68F0F200AFBC74 /* NSTimer+Vein.h in Headers */,
 				E4F14E151B68E7C300AFBC74 /* VEBaseService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F14E201B68F0F200AFBC74 /* NSTimer+Vein.m in Sources */,
 				E4F14E161B68E7C300AFBC74 /* VEBaseService.m in Sources */,
+				E4F14E1B1B68EAF300AFBC74 /* UIAlertView+Vein.m in Sources */,
 				E4F14E121B68E7B400AFBC74 /* VEServiceCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
