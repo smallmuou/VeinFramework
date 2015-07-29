@@ -10,6 +10,10 @@
 		E4F14DE81B68D83500AFBC74 /* Vein.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14DE71B68D83500AFBC74 /* Vein.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4F14DEE1B68D83500AFBC74 /* Vein.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F14DE21B68D83500AFBC74 /* Vein.framework */; };
 		E4F14DF51B68D83500AFBC74 /* VeinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14DF41B68D83500AFBC74 /* VeinTests.m */; };
+		E4F14E111B68E7B400AFBC74 /* VEServiceCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14E0F1B68E7B400AFBC74 /* VEServiceCenter.h */; };
+		E4F14E121B68E7B400AFBC74 /* VEServiceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E101B68E7B400AFBC74 /* VEServiceCenter.m */; };
+		E4F14E151B68E7C300AFBC74 /* VEBaseService.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F14E131B68E7C300AFBC74 /* VEBaseService.h */; };
+		E4F14E161B68E7C300AFBC74 /* VEBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F14E141B68E7C300AFBC74 /* VEBaseService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		E4F14DED1B68D83500AFBC74 /* VeinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F14DF31B68D83500AFBC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F14DF41B68D83500AFBC74 /* VeinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeinTests.m; sourceTree = "<group>"; };
+		E4F14E0F1B68E7B400AFBC74 /* VEServiceCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEServiceCenter.h; sourceTree = "<group>"; };
+		E4F14E101B68E7B400AFBC74 /* VEServiceCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEServiceCenter.m; sourceTree = "<group>"; };
+		E4F14E131B68E7C300AFBC74 /* VEBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBaseService.h; sourceTree = "<group>"; };
+		E4F14E141B68E7C300AFBC74 /* VEBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBaseService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 		E4F14DE41B68D83500AFBC74 /* Vein */ = {
 			isa = PBXGroup;
 			children = (
+				E4F14E061B68E5E400AFBC74 /* Services */,
 				E4F14DE71B68D83500AFBC74 /* Vein.h */,
 				E4F14DE51B68D83500AFBC74 /* Supporting Files */,
 			);
@@ -102,6 +111,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4F14E061B68E5E400AFBC74 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E4F14E0F1B68E7B400AFBC74 /* VEServiceCenter.h */,
+				E4F14E101B68E7B400AFBC74 /* VEServiceCenter.m */,
+				E4F14E131B68E7C300AFBC74 /* VEBaseService.h */,
+				E4F14E141B68E7C300AFBC74 /* VEBaseService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,7 +129,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F14E111B68E7B400AFBC74 /* VEServiceCenter.h in Headers */,
 				E4F14DE81B68D83500AFBC74 /* Vein.h in Headers */,
+				E4F14E151B68E7C300AFBC74 /* VEBaseService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F14E161B68E7C300AFBC74 /* VEBaseService.m in Sources */,
+				E4F14E121B68E7B400AFBC74 /* VEServiceCenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
